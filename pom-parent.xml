@@ -50,33 +50,23 @@
         <version>${version.maven-surefire-plugin}</version>
       </plugin>
       <plugin>
-        <groupId>com.microsoft.azure</groupId>
-        <artifactId>azure-spring-apps-maven-plugin</artifactId>
-        <version>1.18.0</version>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.6.0</version>
         <configuration>
-          <subscriptionId>fd422afd-0ee0-4a83-9b95-cacd7fad143e</subscriptionId>
-          <resourceGroup>rg-TestProj-1</resourceGroup>
-          <clusterName>sb-service</clusterName>
-          <appName>demo-1</appName>
-          <isPublic>true</isPublic>
-          <deployment>
-            <cpu>1</cpu>
-            <memoryInGB>2</memoryInGB>
-            <instanceCount>1</instanceCount>
-            <runtimeVersion>Java 17</runtimeVersion>
-            <resources>
-              <resource>
-                <filtering/>
-                <mergeId/>
-                <targetPath/>
-                <directory>${project.basedir}/target</directory>
-                <includes>
-                  <include>*.jar</include>
-                </includes>
-              </resource>
-            </resources>
-          </deployment>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
         </configuration>
+        <executions>
+          <execution>
+            <id>assemble-all</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

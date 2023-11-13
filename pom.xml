@@ -14,6 +14,9 @@
   <version>1.0.0</version>
   <packaging>jar</packaging>
   <groupId>com.example</groupId>
+  <properties>
+    <java.version>17</java.version>
+  </properties>
 
   <name>Spring-Cloud-Azure-Starter-Active-Directory Sample: Resource Server by Filter</name>
   <description>Microsoft Entra ID Spring Security Integration Spring Boot Sample</description>

@@ -13,6 +13,7 @@
   <artifactId>spring-cloud-azure-starter-active-directory-resource-server-by-filter</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
+  <groupId>com.example</groupId>
 
   <name>Spring-Cloud-Azure-Starter-Active-Directory Sample: Resource Server by Filter</name>
   <description>Microsoft Entra ID Spring Security Integration Spring Boot Sample</description>

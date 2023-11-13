@@ -3,21 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-<!--  <parent>-->
-<!--    <groupId>com.azure.spring</groupId>-->
-<!--    <artifactId>azure-spring-boot-samples</artifactId>-->
-<!--    <version>1.0.0</version>-->
-<!--    <relativePath>../../../pom.xml</relativePath>-->
-<!--  </parent>-->
+  <parent>
+    <groupId>com.azure.spring</groupId>
+    <artifactId>azure-spring-boot-samples</artifactId>
+    <version>1.0.0</version>
+    <relativePath>../../../pom.xml</relativePath>
+  </parent>
 
   <artifactId>spring-cloud-azure-starter-active-directory-resource-server-by-filter</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
-  <groupId>com.example</groupId>
-  <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-  </properties>
 
   <name>Spring-Cloud-Azure-Starter-Active-Directory Sample: Resource Server by Filter</name>
   <description>Microsoft Entra ID Spring Security Integration Spring Boot Sample</description>
@@ -27,27 +22,22 @@
     <dependency>
       <groupId>com.azure.spring</groupId>
       <artifactId>spring-cloud-azure-starter-active-directory</artifactId>
-      <version>5.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
-      <version>2.7.17</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>2.7.17</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security</artifactId>
-      <version>2.7.17</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-oauth2-core</artifactId>
-      <version>5.7.11</version>
     </dependency>
   </dependencies>
 

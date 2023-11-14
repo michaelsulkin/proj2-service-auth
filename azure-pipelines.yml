@@ -34,10 +34,10 @@ steps:
 #    Package: ./target/demo-0.0.1-SNAPSHOT.jar
 
 - task: AzureCLI@2
-  displayName: 'Deploy demo-1 with auth'
-  name: 'deploy_demo_1'
+  displayName: 'Deploy demo-2 with auth'
+  name: 'deploy_demo_2_with_auth'
   inputs:
     azureSubscription: 'scSpringApps'
     scriptType: pscore
     scriptLocation: inlineScript
-    inlineScript: az spring app deploy --name 'demo-1' --artifact-path ./target/spring-cloud-azure-starter-active-directory-resource-server-by-filter-1.0.0-jar-with-dependencies.jar --resource-group 'rg-TestProj-1' --service sb-service
+    inlineScript: az spring app deploy --name 'demo-2-auth' --artifact-path ./target/spring-cloud-azure-starter-active-directory-resource-server-by-filter-1.0.0-jar-with-dependencies.jar --resource-group 'rg-TestProj-1' --service sb-service
